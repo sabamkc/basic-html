@@ -12,6 +12,10 @@
 
 ## Build
 `docker build -t basic-html .`
+or
+`docker build --pull --rm -f 'Dockerfile' -t 'basichtml:latest' '.' `
 
 ## Run
 `docker run -p 8080:80 basic-html`
+or
+`docker run --rm -d -p 80:80/tcp basichtml:latest`
